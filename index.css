@@ -74,6 +74,7 @@ body{
 .logo-image{
     padding-right:150vh;
     width:75px;
+    height:75px;
     object-fit: contain;
 }
 
@@ -130,9 +131,54 @@ body{
     border-radius: 5px;
 
 }
-.images{
-    width:70%;
-    gap:inherit;
-    border-radius: 5px;
+
+
+
+.images img{
+    width:360px;
+    height:200px;
+    padding-top: 18px;;
+    padding-left: 18px;
+    border-radius:30px;
+}
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
     
 }
+
+.nature1{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background: rgb(237, 238, 236);
+    margin: 10px;
+    border-radius:20px;
+    box-shadow:20px 20px 30px rgb(91, 89, 89);
+}
+.nature2{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background: rgb(237, 238, 236);
+    margin: 10px;
+    border-radius:20px;
+    box-shadow:20px 20px 30px rgb(91, 89, 89);
+
+}
+.nature3{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background: rgb(237, 238, 236);
+    margin: 10px;
+    border-radius:20px;
+    box-shadow:20px 20px 30px rgb(91, 89, 89);
+
+}
+
+
+
