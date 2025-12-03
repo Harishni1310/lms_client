@@ -142,12 +142,23 @@ body{
     border-radius:30px;
 }
 .home-container{
+    padding-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap:40px;
     
+}
+
+.head-items a{
+    text-decoration: none;
+    color:wheat;
+    transition: 1s;
+}
+
+.head-items a:hover{
+    color:aliceblue;
 }
 
 .nature1{
@@ -158,6 +169,7 @@ body{
     margin: 10px;
     border-radius:20px;
     box-shadow:20px 20px 30px rgb(91, 89, 89);
+    
 }
 .nature2{
     display: inline-block;
@@ -180,5 +192,35 @@ body{
 
 }
 
+
+.about-container{
+    padding-left: 10%;
+    padding-top: 60px;
+    
+}
+.box{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-image: url(./Asserts/blue_sky.png);
+    transition: 2s;
+}
+
+.box:hover{
+    border-radius: 50%;
+    transform: scale(1.1) rotate(90deg) skew(1.5) ;
+    background-image: url(./Asserts/green_sky.png); 
+}
+
+.vi-bg{
+position: fixed;
+top: 8;
+left: 0;
+height: 50%;
+width: 50%;
+object-fit: cover;
+z-index: -1;
+}
 
 
