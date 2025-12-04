@@ -52,6 +52,7 @@
 }
 
 
+
 body{
     margin: 0;
     padding:0;
@@ -73,7 +74,7 @@ body{
 
 .logo-image{
     padding-right:150vh;
-    width:75px;
+    width: 75px;
     height:75px;
     object-fit: contain;
 }
@@ -84,7 +85,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 450px;
-    width: 450px;
+    width:100%;
     gap:5px;
     background-color: rgb(44, 122, 61);
     padding: 20px;
@@ -142,6 +143,7 @@ body{
     border-radius:30px;
 }
 .home-container{
+    
     padding-top: 60px;
     display: flex;
     flex-direction: row;
@@ -149,7 +151,9 @@ body{
     align-items: center;
     gap:40px;
     
+    
 }
+
 
 .head-items a{
     text-decoration: none;
@@ -161,7 +165,7 @@ body{
     color:aliceblue;
 }
 
-.nature1{
+.nature {
     display: inline-block;
     width: 400px;
     height: 400px;
@@ -171,56 +175,99 @@ body{
     box-shadow:20px 20px 30px rgb(91, 89, 89);
     
 }
-.nature2{
-    display: inline-block;
-    width: 400px;
-    height: 400px;
-    background: rgb(237, 238, 236);
-    margin: 10px;
-    border-radius:20px;
-    box-shadow:20px 20px 30px rgb(91, 89, 89);
-
-}
-.nature3{
-    display: inline-block;
-    width: 400px;
-    height: 400px;
-    background: rgb(237, 238, 236);
-    margin: 10px;
-    border-radius:20px;
-    box-shadow:20px 20px 30px rgb(91, 89, 89);
-
+.nature p{
+    font-size: medium;
+    text-align: left;
+    padding-left: 7px;
 }
 
 
 .about-container{
-    padding-left: 10%;
+    position: relative;      
+    padding-left: 8%;
     padding-top: 60px;
-    
+    padding-bottom: 60px;
+    overflow: visible;
+    min-height: 380px;
 }
 .box{
-    height: 300px;
-    width: 300px;
-    object-fit: contain;
+    margin-bottom: 40px;
+    height: 550px;
+    width: 90%;
+    background-image: url(https://quotefancy.com/media/wallpaper/3840x2160/19735-Vincent-van-Gogh-Quote-If-you-truly-love-nature-you-will-find.jpg);
     background-repeat: no-repeat;
-    background-image: url(./Asserts/blue_sky.png);
+    background-size: cover;
     transition: 2s;
+    position: relative;  
 }
 
 .box:hover{
-    border-radius: 50%;
+    border-radius: 15%;
     transform: scale(1.1) rotate(90deg) skew(1.5) ;
-    background-image: url(./Asserts/green_sky.png); 
+    background-image: url(https://onetreeplanted.org/cdn/shop/files/William_Shakespeare_Quote.jpg?v=1745954197); 
 }
 
+.home-container :hover{
+    transform: scale(1.1);
+}
 .vi-bg{
-position: fixed;
-top: 8;
-left: 0;
-height: 50%;
-width: 50%;
-object-fit: cover;
-z-index: -1;
+      
+  right: 500px;               
+  bottom: 10px;           
+  height: 600px;          
+  width: 90%; ;             
+  max-width: 100%;
+  object-fit: cover;
+  z-index: 1;         
+  border-radius: 7px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 
+.footer-container{
+    display: flex;
+    padding-right: 100px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(15, 14, 14);
+    color: wheat;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+.content{
+    position:absolute;
+    top:70%;
+    left: 41%;
+    z-index: 2;
+    font-size: xx-large ;
+    color: rgb(33, 31, 31);
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-container{
+    font-size: large;
+    margin-left: 25%;
+    margin-bottom: 40px;
+    width: 50%;
+    height: 50%;
+    border: 2px solid gray;
+    text-align: center;
+    background-color: #98f7ad;
+}
+.contact-container input{
+    background-color: #d7f7d7;
+    width: 200px;
+    height: 20px;
+}
+.contact-container textarea{
+    background-color: #d7f7d7;
+    margin-left: 45px;
+    width: 250px;
+    height: 80px;
+}
+.contact-container button{
+    padding-left: 10px;
+    height: 30px;
+    width:120px;
+    background-color:#bdf2bd;
+}
