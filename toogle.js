@@ -2,8 +2,8 @@ const body=document.body;
 const lightbut=document.getElementById("lightmode")
 const darkbut=document.getElementById("darkmode")
 
-lightbut.addEventListener("click",()=>setTheme("light"))
-darkbut.addEventListener("click",()=>setTheme("dark"))
+lightbut.addEventListener("click",()=>setTheme("light"));
+darkbut.addEventListener("click",()=>setTheme("dark"));
 
 const setTheme = (theme)=>{
     if(theme === "dark"){
@@ -12,4 +12,9 @@ const setTheme = (theme)=>{
     else{
         body.classList.remove("dark");
     }
+    sessionStorage.setItem("theme",theme)
+}
+const currentTheme=sessionStorage.getItem("theme");
+if(currentTheme === "dark"){
+    body.classList.add("dark");
 }
